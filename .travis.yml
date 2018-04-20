@@ -1,0 +1,26 @@
+osx_image: xcode9.3
+language: objective-c
+xcode_project: YXYDashLayerSample
+xcode_scheme: YXYDashLayerKit
+xcode_sdk: iphoneos11.3
+env:
+  global:
+  - FRAMEWORK_NAME=YXYDashLayerKit
+before_install:
+- brew update
+- brew outdated carthage || brew upgrade carthage
+before_script:
+before_deploy:
+- carthage build --no-skip-current
+- carthage archive $FRAMEWORK_NAME
+script: xcodebuild -project Sample/YXYDashLayerSample.xcodeproj -scheme YXYDashLayerSample
+  -configuration Release -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+deploy:
+  provider: releases
+  api_key:
+    secure: JkfrHAdFxyUGwLqn/JJpwz2ys6KTpz9jaHLJO9RKZLxQfQrQxjwcBEud8nbZW3xOvDC2C6zn1JcRsfx/tL7dunGAemN8vDoUm6MkL5US7f3H2B4iVIbDILxZZjJJffyJ4DNGSnmWKqO2TM64qltqOXpbtwCTlhY0YgusUnMBYvQ/lMKM3goZb3Y5Xl4nryVIIFkV7gz4TVPoPc4RUr7OsbRY+XmeIbJseF3S3NPF7k0nQSE51cy9ykx69fKovCfg4xaTIBUFmekT04ObrgGaXhbXkY05numrmL3olX54RzeUC7ebveBescZXY8L35ueBCE6c0MkaV5COKLdDJdH5zkA4cBySD5JRvC6a5rZ6u4w2IVxuMLqBvlTpg+8dEFj1pKrGpfh04molSfAUyrwODkxSGOuK8MTUtohHaNiwmuYnsEv87+YHAP7pt36ppsGsKzkhWF8yF3yLamFHSZEHrRpOmzt9Th7tf/E5K877ot1Jyow8xTrYP/y2WoCzqRK6YSQlGrl9cTk5Wy41Lc0dys7ubNK/1yJjOb3beBCNUlzGsBtE45JKMf3H2GSv/XR1RDX+ASwTsht3T4bPK91SnHOWkIcxL+PYH4Fketxg6wXoPfTJItZPO6MGvWHAqfwi/ru1/2lZ8mACYyuj2XzXnUTQREnxko2Pn3bhcd5a8uc=
+  file: YXYDashLayerKit.framework.zip
+  skip_cleanup: true
+  on:
+    repo: yulingtianxia/YXYDashLayer
+    tags: true

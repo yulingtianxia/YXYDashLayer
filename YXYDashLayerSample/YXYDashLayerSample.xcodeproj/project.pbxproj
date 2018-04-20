@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4359764208A175E0056CFCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4359763208A175E0056CFCF /* AppDelegate.m */; };
+		A4359767208A175E0056CFCF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4359766208A175E0056CFCF /* ViewController.m */; };
+		A435976A208A175E0056CFCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4359768208A175E0056CFCF /* Main.storyboard */; };
+		A435976C208A175F0056CFCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A435976B208A175F0056CFCF /* Assets.xcassets */; };
+		A435976F208A175F0056CFCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A435976D208A175F0056CFCF /* LaunchScreen.storyboard */; };
+		A4359772208A175F0056CFCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4359771208A175F0056CFCF /* main.m */; };
+		A435977F208A17670056CFCF /* YXYColorfulDashLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A435977A208A17670056CFCF /* YXYColorfulDashLayer.m */; };
+		A4359780208A17670056CFCF /* YXYMaskDashLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A435977C208A17670056CFCF /* YXYMaskDashLayer.m */; };
+		A4359781208A17670056CFCF /* YXYProgressDashLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A435977E208A17670056CFCF /* YXYProgressDashLayer.m */; };
+		A435978B208A25D30056CFCF /* YXYDashLayerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A4359789208A25D30056CFCF /* YXYDashLayerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A435978E208A25D30056CFCF /* YXYDashLayerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4359787208A25D30056CFCF /* YXYDashLayerKit.framework */; };
+		A435978F208A25D30056CFCF /* YXYDashLayerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4359787208A25D30056CFCF /* YXYDashLayerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A4359794208A25E40056CFCF /* YXYMaskDashLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A435977C208A17670056CFCF /* YXYMaskDashLayer.m */; };
+		A4359795208A25E70056CFCF /* YXYColorfulDashLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A435977A208A17670056CFCF /* YXYColorfulDashLayer.m */; };
+		A4359796208A25EA0056CFCF /* YXYProgressDashLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A435977E208A17670056CFCF /* YXYProgressDashLayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A435978C208A25D30056CFCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4359757208A175E0056CFCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4359786208A25D30056CFCF;
+			remoteInfo = YXYDashLayerKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A4359793208A25D30056CFCF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A435978F208A25D30056CFCF /* YXYDashLayerKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A435975F208A175E0056CFCF /* YXYDashLayerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YXYDashLayerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4359762208A175E0056CFCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A4359763208A175E0056CFCF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A4359765208A175E0056CFCF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A4359766208A175E0056CFCF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A4359769208A175E0056CFCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A435976B208A175F0056CFCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A435976E208A175F0056CFCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4359770208A175F0056CFCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4359771208A175F0056CFCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A4359779208A17670056CFCF /* YXYColorfulDashLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXYColorfulDashLayer.h; sourceTree = "<group>"; };
+		A435977A208A17670056CFCF /* YXYColorfulDashLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXYColorfulDashLayer.m; sourceTree = "<group>"; };
+		A435977B208A17670056CFCF /* YXYMaskDashLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXYMaskDashLayer.h; sourceTree = "<group>"; };
+		A435977C208A17670056CFCF /* YXYMaskDashLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXYMaskDashLayer.m; sourceTree = "<group>"; };
+		A435977D208A17670056CFCF /* YXYProgressDashLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXYProgressDashLayer.h; sourceTree = "<group>"; };
+		A435977E208A17670056CFCF /* YXYProgressDashLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXYProgressDashLayer.m; sourceTree = "<group>"; };
+		A4359787208A25D30056CFCF /* YXYDashLayerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YXYDashLayerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4359789208A25D30056CFCF /* YXYDashLayerKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXYDashLayerKit.h; sourceTree = "<group>"; };
+		A435978A208A25D30056CFCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A435975C208A175E0056CFCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A435978E208A25D30056CFCF /* YXYDashLayerKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4359783208A25D30056CFCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4359756208A175E0056CFCF = {
+			isa = PBXGroup;
+			children = (
+				A4359778208A17670056CFCF /* Source */,
+				A4359761208A175E0056CFCF /* YXYDashLayerSample */,
+				A4359788208A25D30056CFCF /* YXYDashLayerKit */,
+				A4359760208A175E0056CFCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4359760208A175E0056CFCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A435975F208A175E0056CFCF /* YXYDashLayerSample.app */,
+				A4359787208A25D30056CFCF /* YXYDashLayerKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4359761208A175E0056CFCF /* YXYDashLayerSample */ = {
+			isa = PBXGroup;
+			children = (
+				A4359762208A175E0056CFCF /* AppDelegate.h */,
+				A4359763208A175E0056CFCF /* AppDelegate.m */,
+				A4359765208A175E0056CFCF /* ViewController.h */,
+				A4359766208A175E0056CFCF /* ViewController.m */,
+				A4359768208A175E0056CFCF /* Main.storyboard */,
+				A435976B208A175F0056CFCF /* Assets.xcassets */,
+				A435976D208A175F0056CFCF /* LaunchScreen.storyboard */,
+				A4359770208A175F0056CFCF /* Info.plist */,
+				A4359771208A175F0056CFCF /* main.m */,
+			);
+			path = YXYDashLayerSample;
+			sourceTree = "<group>";
+		};
+		A4359778208A17670056CFCF /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A435977B208A17670056CFCF /* YXYMaskDashLayer.h */,
+				A435977C208A17670056CFCF /* YXYMaskDashLayer.m */,
+				A4359779208A17670056CFCF /* YXYColorfulDashLayer.h */,
+				A435977A208A17670056CFCF /* YXYColorfulDashLayer.m */,
+				A435977D208A17670056CFCF /* YXYProgressDashLayer.h */,
+				A435977E208A17670056CFCF /* YXYProgressDashLayer.m */,
+			);
+			name = Source;
+			path = ../Source;
+			sourceTree = "<group>";
+		};
+		A4359788208A25D30056CFCF /* YXYDashLayerKit */ = {
+			isa = PBXGroup;
+			children = (
+				A4359789208A25D30056CFCF /* YXYDashLayerKit.h */,
+				A435978A208A25D30056CFCF /* Info.plist */,
+			);
+			path = YXYDashLayerKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A4359784208A25D30056CFCF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A435978B208A25D30056CFCF /* YXYDashLayerKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A435975E208A175E0056CFCF /* YXYDashLayerSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4359775208A175F0056CFCF /* Build configuration list for PBXNativeTarget "YXYDashLayerSample" */;
+			buildPhases = (
+				A435975B208A175E0056CFCF /* Sources */,
+				A435975C208A175E0056CFCF /* Frameworks */,
+				A435975D208A175E0056CFCF /* Resources */,
+				A4359793208A25D30056CFCF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A435978D208A25D30056CFCF /* PBXTargetDependency */,
+			);
+			name = YXYDashLayerSample;
+			productName = YXYDashLayerSample;
+			productReference = A435975F208A175E0056CFCF /* YXYDashLayerSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4359786208A25D30056CFCF /* YXYDashLayerKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4359790208A25D30056CFCF /* Build configuration list for PBXNativeTarget "YXYDashLayerKit" */;
+			buildPhases = (
+				A4359782208A25D30056CFCF /* Sources */,
+				A4359783208A25D30056CFCF /* Frameworks */,
+				A4359784208A25D30056CFCF /* Headers */,
+				A4359785208A25D30056CFCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YXYDashLayerKit;
+			productName = YXYDashLayerKit;
+			productReference = A4359787208A25D30056CFCF /* YXYDashLayerKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4359757208A175E0056CFCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "杨萧玉";
+				TargetAttributes = {
+					A435975E208A175E0056CFCF = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					A4359786208A25D30056CFCF = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = A435975A208A175E0056CFCF /* Build configuration list for PBXProject "YXYDashLayerSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4359756208A175E0056CFCF;
+			productRefGroup = A4359760208A175E0056CFCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A435975E208A175E0056CFCF /* YXYDashLayerSample */,
+				A4359786208A25D30056CFCF /* YXYDashLayerKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A435975D208A175E0056CFCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A435976F208A175F0056CFCF /* LaunchScreen.storyboard in Resources */,
+				A435976C208A175F0056CFCF /* Assets.xcassets in Resources */,
+				A435976A208A175E0056CFCF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4359785208A25D30056CFCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A435975B208A175E0056CFCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4359780208A17670056CFCF /* YXYMaskDashLayer.m in Sources */,
+				A4359767208A175E0056CFCF /* ViewController.m in Sources */,
+				A4359772208A175F0056CFCF /* main.m in Sources */,
+				A435977F208A17670056CFCF /* YXYColorfulDashLayer.m in Sources */,
+				A4359764208A175E0056CFCF /* AppDelegate.m in Sources */,
+				A4359781208A17670056CFCF /* YXYProgressDashLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4359782208A25D30056CFCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4359795208A25E70056CFCF /* YXYColorfulDashLayer.m in Sources */,
+				A4359794208A25E40056CFCF /* YXYMaskDashLayer.m in Sources */,
+				A4359796208A25EA0056CFCF /* YXYProgressDashLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A435978D208A25D30056CFCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4359786208A25D30056CFCF /* YXYDashLayerKit */;
+			targetProxy = A435978C208A25D30056CFCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4359768208A175E0056CFCF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4359769208A175E0056CFCF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A435976D208A175F0056CFCF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A435976E208A175F0056CFCF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4359773208A175F0056CFCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A4359774208A175F0056CFCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4359776208A175F0056CFCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D3RCVUP6VH;
+				INFOPLIST_FILE = YXYDashLayerSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yulingtianxia.YXYDashLayerSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4359777208A175F0056CFCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D3RCVUP6VH;
+				INFOPLIST_FILE = YXYDashLayerSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yulingtianxia.YXYDashLayerSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A4359791208A25D30056CFCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D3RCVUP6VH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = YXYDashLayerKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yulingtianxia.YXYDashLayerKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A4359792208A25D30056CFCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D3RCVUP6VH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = YXYDashLayerKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yulingtianxia.YXYDashLayerKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A435975A208A175E0056CFCF /* Build configuration list for PBXProject "YXYDashLayerSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4359773208A175F0056CFCF /* Debug */,
+				A4359774208A175F0056CFCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4359775208A175F0056CFCF /* Build configuration list for PBXNativeTarget "YXYDashLayerSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4359776208A175F0056CFCF /* Debug */,
+				A4359777208A175F0056CFCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4359790208A25D30056CFCF /* Build configuration list for PBXNativeTarget "YXYDashLayerKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4359791208A25D30056CFCF /* Debug */,
+				A4359792208A25D30056CFCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4359757208A175E0056CFCF /* Project object */;
+}
