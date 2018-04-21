@@ -13,7 +13,7 @@ before_script:
 before_deploy:
 - carthage build --no-skip-current
 - carthage archive $FRAMEWORK_NAME
-script: xcodebuild -project Sample/YXYDashLayerSample.xcodeproj -scheme YXYDashLayerSample
+script: xcodebuild -project YXYDashLayerSample/YXYDashLayerSample.xcodeproj -scheme YXYDashLayerSample
   -configuration Release -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 deploy:
   provider: releases
