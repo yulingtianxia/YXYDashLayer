@@ -29,21 +29,21 @@
     self.progressDash = [YXYProgressDashLayer layer];
     self.progressDash.underLayer.colors = @[(id)[UIColor blueColor].CGColor, (id)[UIColor greenColor].CGColor];
     self.progressDash.progressColor = [UIColor grayColor];
-    
+
     CGFloat radius = self.cornerRadiusSlider.value;
     self.progressDash.dashCornerRadius = radius;
-    
+
     CGFloat dashGap = self.dashGapSlider.value;
     self.progressDash.dashGap = dashGap;
-    
+
     CGFloat dashWidth = self.dashWidthSlider.value;
     self.progressDash.dashWidth = dashWidth;
-    
+
     NSInteger count = self.totalCountSlider.value;
     self.progressDash.totalCount = count;
-    
+
     self.progressDash.progress = self.grayCountSlider.value;
-    
+
     CGRect dashRect = CGRectMake((self.view.frame.size.width - 200) / 2, 50, 200, 300);
     self.progressDash.frame = dashRect;
     [self.progressDash refresh];
