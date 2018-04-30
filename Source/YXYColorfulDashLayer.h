@@ -12,10 +12,25 @@
 
 @interface YXYColorfulDashLayer : CAGradientLayer
 
+/**
+ 分段的间隙
+ */
 @property (nonatomic) CGFloat dashGap;
+/**
+ 线宽
+ */
 @property (nonatomic) CGFloat dashWidth;
+/**
+ 矩形的圆角半径
+ */
 @property (nonatomic) CGFloat dashCornerRadius;
+/**
+ 分段总数
+ */
 @property (nonatomic) NSUInteger totalCount;
+/**
+ 需要显示哪些分段的 index
+ */
 @property (nonatomic) NSArray<NSNumber *> *showIndexes;
 
 @property (nonatomic, readonly) YXYMaskDashLayer *maskLayer;

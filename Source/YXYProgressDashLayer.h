@@ -12,11 +12,20 @@
 
 @interface YXYProgressDashLayer : CALayer
 
+/**
+ 分段的间隙
+ */
 @property (nonatomic) CGFloat dashGap;
+/**
+ 线宽
+ */
 @property (nonatomic) CGFloat dashWidth;
+/**
+ 矩形的圆角半径
+ */
 @property (nonatomic) CGFloat dashCornerRadius;
 /**
- 总段数
+ 分段总数
  */
 @property (nonatomic) NSUInteger totalCount;
 /**

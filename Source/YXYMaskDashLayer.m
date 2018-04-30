@@ -87,7 +87,7 @@
     if (pieceLength < 0) {
         pieceLength = 0;
         realTotalCount = self.totalLength / realDashGap;
-        realDashGap = self.totalLength / realTotalCount;
+        pieceLength = self.totalLength / realTotalCount - realDashGap;
         NSLog(@"Can't show! Reduce total count or dash gap! Real Total Count: %lu, Real Dash Gap:%ff", (unsigned long)realTotalCount, realDashGap);
     }
     self.lineDashPhase = - (self.dashRect.size.width / 2 - self.realDashCornerRadius + realDashGap / 2);

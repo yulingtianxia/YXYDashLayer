@@ -9,12 +9,17 @@
 
 # YXYDashLayer
 
-Ugly UI. Emmmmm.
+`YXYProgressDashLayer` is composed of `YXYColorfulDashLayer`, which is masked by `YXYMaskDashLayer`. They can draw dash rounded rects.
 
+`YXYMaskDashLayer` controls the dash path. `YXYColorfulDashLayer` is a subclass of `CAGradientLayer`, so it can draw colorful dash path. `YXYProgressDashLayer` uses two instances of `YXYColorfulDashLayer`.
 
-## Usage
+## 📚 Article
 
-`YXYProgressDashLayer` is composed of `YXYColorfulDashLayer`, which is masked by `YXYMaskDashLayer`.
+[Colorful Rounded Rect Dash Border](http://yulingtianxia.com/blog/2018/04/30/Colorful-Rounded-Rect-Dash-Border/)
+
+## 🐒 Usage
+
+![](Assets/YXYDashLayer.gif)
 
 ```
 self.progressDash = [YXYProgressDashLayer layer];
@@ -41,9 +46,9 @@ self.progressDash.frame = dashRect;
 [self.view.layer addSublayer:self.progressDash];
 ```
 
-![](Assets/YXYDashLayer.gif)
+For better performance, you can use `refreshProgress` after modifying `totalCount`、`dashGap` and `progress`. NOTE: `refresh` must be called when `frame`, `dashWidth` or `dashCornerRadius` changes.
 
-
+![](Assets/YXYDashLayer.PNG)
 
 ```
 CGRect dashRect = CGRectMake((self.view.frame.size.width - 200) / 2, 50, 200, 300);
@@ -67,8 +72,14 @@ layer2.frame = dashRect;
 [self.view.layer addSublayer:layer2];
 ```
 
-![](Assets/YXYDashLayer.PNG)
+## 🔮 Example
 
+To run the example project, clone the repo and run YXYDashLayerSample target.
+
+## 💰 Requirement
+
+- iOS 4.0+ 
+- Xcode 9.0+
 
 ## 📲 Installation
 
