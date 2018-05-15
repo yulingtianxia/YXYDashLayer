@@ -88,6 +88,11 @@
 {
     _progress = progress;
     self.progressLayer.showIndexes = [self indexesOfRange:NSMakeRange(0, progress)];
+    NSUInteger underLayerLength = 0;
+    if (progress <= self.totalCount) {
+        underLayerLength = self.totalCount - progress;
+    }
+    self.underLayer.showIndexes = [self indexesOfRange:NSMakeRange(progress, underLayerLength)];
 }
 
 - (NSArray<NSNumber *> *)indexesOfRange:(NSRange)range
